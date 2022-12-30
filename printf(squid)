@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main() {
+	printf("     a\n");
+	printf("    aaa\n");
+	printf("   aaaaa\n");
+	printf("  aaaaaaa\n");
+	printf(" aaaaaaaaa\n");
+	printf("   a a a\n");
+	printf("   a a a\n");
+	printf("  a aaa a\n");
+	printf("a a a a a\n");
+	printf("a  a a a  a\n");
+	return 0;
+}
