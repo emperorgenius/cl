@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+void ShowSissors() 
+{
+	printf("    0 0\n");
+	printf(" 000000\n");
+	printf(" 00000000\n");
+	printf("   0000\n");
+}
+void ShowPaper() 
+{
+	printf("0 0 0 0\n");
+	printf("0000000\n");
+	printf("00000000\n");
+	printf("   0000\n");
+}
+void ShowRock() 
+{
+	printf("0000000\n");
+	printf("0000000\n");
+	printf("00000000\n");
+	printf("   0000\n");
+}
+void main() 
+{
+	ShowRock();
+	ShowPaper();
+	ShowSissors();
+}
