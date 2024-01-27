@@ -1,51 +1,32 @@
-[Project]
-FileName=sadffasdfasdf.dev
-Name=Project3
-Type=1
-Ver=2
-ObjFiles=
-Includes=
-Libs=
-PrivateResource=
-ResourceIncludes=
-MakeIncludes=
-Compiler=
-CppCompiler=
-Linker=
-IsCpp=1
-Icon=
-ExeOutput=
-ObjectOutput=
-LogOutput=
-LogOutputEnabled=0
-OverrideOutput=0
-OverrideOutputName=
-HostApplication=
-UseCustomMakefile=0
-CustomMakefile=
-CommandLine=
-Folders=
-IncludeVersionInfo=0
-SupportXPThemes=0
-CompilerSet=0
-CompilerSettings=0000000000000000000000000
+#include<cstdio>
+#include<iostream>
+#include<string>
+using namespace std;
 
-[VersionInfo]
-Major=1
-Minor=0
-Release=0
-Build=0
-LanguageID=1033
-CharsetID=1252
-CompanyName=
-FileVersion=
-FileDescription=Developed using the Dev-C++ IDE
-InternalName=
-LegalCopyright=
-LegalTrademarks=
-OriginalFilename=
-ProductName=
-ProductVersion=
-AutoIncBuildNr=0
-SyncProduct=1
-
+int main()
+{
+	int n,i,j;
+	cin >> n;
+	string istudent[n];
+	string ostudent[3];
+	for(i = 0; i < n; i++){
+	
+		cin >> istudent[i];
+	}
+	for(j = 0; j < n; j++)
+	{
+		if(j > 3)
+		{
+			ostudent[0] = ostudent[1];
+			ostudent[1] = ostudent[2];
+			istudent[j] = ostudent[2];
+		}
+		else{
+			istudent[j] = ostudent[j];
+		}
+		cout << ostudent[0];
+		cout << ostudent[1];
+		cout << ostudent[2];
+	}
+	return 0;
+}
