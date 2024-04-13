@@ -1,0 +1,19 @@
+#include<cstdio>
+#include<iostream>
+#include<algorithm>
+#include<cmath>
+using namespace std;
+
+int main()
+{
+	int a, b, l = 1, g;
+	scanf("%d %d", &a, &b);
+	for(int i = 1; i <= min(a, b); i++)
+	{
+		if(a%i == 0 && b%i == 0 && l < i)
+			l = i;
+	}
+	g = a * b / l;
+	printf("%d\n%d", l, g);
+	return 0;
+}
