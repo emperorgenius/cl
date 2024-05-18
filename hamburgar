@@ -1,0 +1,33 @@
+#include<cstdio>
+#include<iostream>
+#include<string>
+using namespace std;
+
+int main()
+{
+	int n, k, p, r = 0;
+	string ph;
+	scanf("%d %d", &n, &k);
+	cin >> ph;
+	for(int i = 0; i <= ph.length(); i++)
+	{
+		if(ph[i] == 'P')
+		{
+			p = i;
+			for(int i = 0; i <= k*2; i++)
+			{
+				if(p-k+i >= 0 && ph[p-k+i] == 'H')
+				{
+					ph[p] = 'D';
+					ph[p-k+i] = 'D';
+					r++;
+					break;
+				}
+				else if(i == k*2)
+					ph[p] = 'D';
+			}
+		}
+	}
+	printf("%d", r);
+	return 0;
+}
